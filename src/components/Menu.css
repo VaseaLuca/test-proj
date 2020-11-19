@@ -1,0 +1,19 @@
+.menu {
+  width: 280px;
+  min-height: 100vh;
+  border-right: 0.6px solid #f0f4fa;
+}
+.menu-logo {
+  text-align: center;
+}
+.menu-logo img {
+  padding: 30px;
+}
+.menu-work-log {
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  color: rgba(18, 38, 63, 0.712);
+}
+.menu-work-log:hover {
+  color: rgb(18, 38, 63);
+}

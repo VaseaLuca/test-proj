@@ -1,0 +1,42 @@
+table {
+  overflow-x: auto;
+  overflow-x: scroll;
+}
+th {
+  padding: 10px 40px;
+  width: 280px;
+  min-width: 50px;
+  color:#b7bbc0;
+}
+td {
+  height: 100px;
+  text-align: center;
+}
+.user {
+display: flex;
+}
+.user-block {
+  display: flex;
+  cursor: pointer;
+  text-align: left;
+  width: 200px;
+}
+.user-img img {
+  width: 30px;
+}
+.user-name {
+  white-space: nowrap;
+  margin: auto 0 auto 20px;
+  font-weight: 500;
+}
+.user-table-head-date {
+  overflow-x: auto;
+}
+.user-table-detail  {
+color:#82c91f;
+cursor: pointer;
+
+}
+.user-table-detail-none{
+cursor: default;
+}

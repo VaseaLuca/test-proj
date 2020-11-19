@@ -1,0 +1,32 @@
+hr{
+border: 0.1px solid #c8cbcf57;
+
+}
+.worklog-card {
+  margin: 40px auto 20px auto;
+  padding: 20px 20px;
+  width: 95%;
+  height: 100vh;
+  border: 0.5px solid #f0f4fa;
+  border-radius: 7px;
+  background-color: #fff;
+}
+.worklog-card-nav{
+  display: flex;
+  padding: 10px;
+}
+.worklog-card-item {
+color: #b7bbc0;
+}
+.worklog-card-item-dashboard{
+  color: #1657af;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.worklog-card-item-dashboard:after {
+margin:  0 0 0 10px;
+content: '>';
+font-size: 12px;
+color: #b7bbc0;
+cursor: auto;
+}

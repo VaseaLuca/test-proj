@@ -1,0 +1,10 @@
+.app {
+  display: flex;
+}
+.app-menu {
+  flex-basis: 10%;
+}
+.app-worklog{
+  flex-basis: 90%;
+  background-color: #f9fbfd;
+}
