@@ -4,19 +4,19 @@ import './User.css';
 import axios from './axios';
 
 function User({ fetchUserUrl, fetchUrl }) {
-  //User State
+  ////User State
   const [user,setUser]= useState([])
   const [logs, setLogs] = useState([]);
 
-console.log(user)
 
   useEffect(() => {
-// Fetch user profile
+  //// Fetch user profile
     async function fetchUser() {
       const userRequest = await axios.get(fetchUserUrl);
       setUser(userRequest.data);
     }
-// Fetch project logs
+  //// Fetch project logs
+
     fetchUser();
     async function fetchLogs() {
       const logsRequest = await axios.get(fetchUrl);
@@ -24,17 +24,17 @@ console.log(user)
     }
     fetchLogs();
   }, [fetchUserUrl, fetchUrl]);
+  ////
 
-  //
-  // The date in table header
-
-
+  //// The date in table header
   const time = logs.map((log, index) => {
-    const milliseconds = log[0] * 1000;
-    const dateObject = new Date(milliseconds);
-    const humanDateFormat = dateObject.toLocaleDateString("ro-US");
+     const milliseconds = log[0] * 1000;
+     const dateObject = new Date(milliseconds);
+     const humanDateFormat = dateObject.toLocaleDateString("ro-US");
     return <th key={index}> {humanDateFormat} </th>;
   });
+  ////
+
   return (
     <div className="user">
       <table>
@@ -75,4 +75,4 @@ console.log(user)
   );
 }
 
-export default User
+export default User;

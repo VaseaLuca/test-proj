@@ -14,29 +14,16 @@ function WorklogCard() {
       </div>
       <hr />
       <div className="worklog-card-user">
-        <User
-          fetchUserUrl={requests.userInfoRequests}
-          fetchUrl={requests.logsForLandingPage}
-        />
+        <User fetchUserUrl={requests.userInfoRequests} fetchUrl={requests.logsForLandingPage}/>
         <hr />
-        <User
-          fetchUserUrl={requests.userInfoRequests}
-          fetchUrl={requests.logsForBarberPage}
-        />
+        <User fetchUserUrl={requests.userInfoRequests} fetchUrl={requests.logsForBarberPage}/>
         <hr />
-        <User
-          fetchUserUrl={requests.userInfoRequests}
-          fetchUrl={requests.logsForLandingPage}
-        />
+        <User fetchUserUrl={requests.userInfoRequests} fetchUrl={requests.logsForLandingPage}/>
         <hr />
-        <User
-          fetchUserUrl={requests.userInfoRequests}
-          fetchUrl={requests.logsForBarberPage}
-        />
+        <User fetchUserUrl={requests.userInfoRequests} fetchUrl={requests.logsForBarberPage}/>
       </div>
       <hr />
     </div>
   );
 }
-
-export default WorklogCard
+export default WorklogCard;
